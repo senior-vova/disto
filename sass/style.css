@@ -142,6 +142,206 @@ header .container .right_bar span {
   background: #E5E5E5;
 }
 
-section {
-  height: 200vh;
+section.slider {
+  height: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  section.slider {
+    height: 400px;
+  }
+}
+
+section.slider .container {
+  max-width: 1170px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+section.slider .container .carousel {
+  margin-top: 50px;
+  height: 100%;
+}
+
+section.slider .container .carousel .carousel-inner {
+  height: 100%;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item {
+  height: auto;
+  opacity: 0;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .wrapper-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  section.slider .container .carousel .carousel-inner .carousel-item .wrapper-link {
+    height: 400px;
+  }
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .wrapper-link:hover {
+  cursor: pointer;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner {
+  z-index: 1000;
+  position: absolute;
+  top: 200px;
+  left: 7%;
+  width: 40%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  section.slider .container .carousel .carousel-inner .carousel-item .banner {
+    top: 120px;
+    left: 15%;
+    width: 80%;
+    height: 130px;
+  }
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner a.btn {
+  color: white;
+  text-transform: uppercase;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner a.name {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #ffffffd0;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner a.name:hover {
+  color: white;
+  text-decoration: none;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner .user img {
+  width: 26px;
+  border-radius: 13px;
+  margin-right: 3px;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner .user a {
+  font-size: 1rem;
+  color: #ffffffd0;
+  margin-right: 10px;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner .user a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .banner .user i, section.slider .container .carousel .carousel-inner .carousel-item .banner .user span {
+  margin: 0 3px;
+  font-size: 1rem;
+  color: white;
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  section.slider .container .carousel .carousel-inner .carousel-item .image {
+    height: 400px;
+  }
+}
+
+section.slider .container .carousel .carousel-inner .carousel-item.active {
+  opacity: 1;
+}
+
+section.slider .container .carousel ol {
+  margin: 0 5px 20px;
+  width: 100%;
+}
+
+section.slider .container .carousel ol .indicator.active span {
+  color: white;
+}
+
+section.slider .container .carousel ol .indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+@media screen and (max-width: 993px) {
+  section.slider .container .carousel ol .indicator {
+    margin: 0;
+  }
+}
+
+section.slider .container .carousel ol .indicator div.image {
+  width: 120px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center center;
+}
+
+section.slider .container .carousel ol .indicator span {
+  width: auto;
+  margin-left: 5px;
+  color: #ffffffd0;
+  height: 45px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+section.slider .container .carousel ol .indicator:hover {
+  cursor: pointer;
+}
+
+section.slider .container .carousel ol .indicator:hover span {
+  color: #fff;
 }

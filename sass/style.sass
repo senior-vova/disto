@@ -2,7 +2,7 @@ html,body
     font-family: 'Lato', sans-serif
     font-size: 16px
     @media screen and (max-width: 1170px)
-        font-size: 14px    
+        font-size: 14px
 
 header
     background: linear-gradient(to right, #3A4CB4 0%,#FD1D1D 100%)
@@ -94,5 +94,118 @@ header
                         &:hover
                             background: #E5E5E5
 
-section
-    height: 200vh
+section.slider
+    height: 600px
+    @media screen and ( max-width: 767px )
+        height: 400px
+    .container
+        max-width: 1170px
+        width: 100%
+        height: 100%
+        margin: 0
+        .carousel
+            margin-top: 50px
+            height: 100%
+            .carousel-inner
+                height: 100%
+                .carousel-item
+                    height: auto
+                    opacity: 0
+                    transition: all .4s ease 0s
+                    .wrapper-link
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 600px
+                        @media screen and ( max-width: 767px )
+                            height: 400px
+                        &:hover
+                            cursor: pointer
+                    .banner
+                        z-index: 1000
+                        position: absolute
+                        top: 200px
+                        left: 7%
+                        width: 40%
+                        height: 200px
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        justify-content: space-between
+                        @media screen and ( max-width: 767px )
+                            top: 120px
+                            left: 15%
+                            width: 80%
+                            height: 130px
+                        a.btn
+                            color: white
+                            text-transform: uppercase
+                        a.name
+                            font-size: 2rem
+                            font-weight: bolder
+                            color: #ffffffd0
+                            &:hover
+                                color: white
+                                text-decoration: none
+                        .user
+                            display: flex
+                            align-items: center
+                            img
+                                width: 26px
+                                border-radius: 13px
+                                margin-right: 3px
+                            a
+                                font-size: 1rem
+                                color: #ffffffd0
+                                margin-right: 10px
+                                &:hover
+                                    color: white
+                                    text-decoration: none
+                            i,span
+                                margin: 0 3px
+                                font-size: 1rem
+                                color: white
+                    .image
+                        position: absolute
+                        top: 0
+                        left: 0
+                        height: 600px
+                        @media screen and ( max-width: 767px )
+                            height: 400px
+                        background-size: cover
+                        background-position: center center
+                        border-radius: 10px
+                .carousel-item.active
+                    opacity: 1
+            ol
+                margin: 0 5px 20px
+                width: 100%
+                .indicator.active
+                    span
+                        color: white
+                .indicator
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    margin: 20px
+                    @media screen and ( max-width: 993px )
+                        margin: 0
+                    div.image
+                        width: 120px
+                        min-width: 60px
+                        height: 60px
+                        border-radius: 30px
+                        background-size: cover
+                        background-position: center center
+                    span
+                        width: auto
+                        margin-left: 5px
+                        color: #ffffffd0
+                        height: 45px
+                        font-weight: bold
+                        overflow: hidden
+                    &:hover
+                        cursor: pointer
+                        span
+                            color: #fff

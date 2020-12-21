@@ -64,12 +64,11 @@
         <div class="row">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
-              <img
-                src="./img/logo.png"
-                alt="Disto"
-              />
+              <img src="./img/logo.png" alt="Disto" />
             </a>
-            <ul class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex navbar-nav mr-auto">
+            <ul
+              class="d-none d-sm-none d-md-none d-lg-flex d-xl-flex navbar-nav mr-auto"
+            >
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -168,7 +167,160 @@
         </div>
       </div>
     </div>
-    <section></section>
+    <section class="slider d-flex justify-content-center">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <ol
+            class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex carousel-indicators justify-content-between"
+          >
+            <div
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="indicator active"
+            >
+              <div
+                class="image"
+                style="background-image: url('./img/unsplash-120x120.jpg')"
+              ></div>
+              <span class="d-inline-block">People Are Enjoy The Job Thet They Love</span>
+            </div>
+            <div
+              data-target="#carouselExampleIndicators"
+              data-slide-to="1"
+              class="indicator"
+            >
+              <div
+                class="image"
+                style="
+                  background-image: url('./img/vincent-branciforti-120x120.jpg');
+                "
+              ></div>
+              <span>Every Photographer Needs To Shoot This Photo</span>
+            </div>
+            <div
+              data-target="#carouselExampleIndicators"
+              data-slide-to="2"
+              class="indicator"
+            >
+              <div
+                class="image"
+                style="background-image: url('./img/daniel-olah-120x120.jpg')"
+              ></div>
+              <span>Have A Good Time With My Friend And Enjoyed</span>
+            </div>
+            <div
+              data-target="#carouselExampleIndicators"
+              data-slide-to="3"
+              class="indicator"
+            >
+              <div
+                class="image"
+                style="background-image: url('./img/daniel-korpai-120x120.jpg')"
+              ></div>
+              <span>This Is A Great Photo And Nice For Shooting</span>
+            </div>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="4000">
+              <div class="banner">
+                <a href="#" role="button" class="btn btn-primary btn-sm"
+                  >Business</a
+                >
+                <a class="name" href="#"
+                  >People Are Enjoy The Job Thet They Love</a
+                >
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+              <div
+                class="d-block w-100 image"
+                style="background-image: url('./img/unsplash.jpg')"
+              ></div>
+              <a href="#" class="wrapper-link"></a>
+            </div>
+            <div class="carousel-item" data-interval="4000">
+              <div class="banner">
+                <a
+                  href="#"
+                  role="button"
+                  class="btn btn-sm"
+                  style="background-color: var(--indigo)"
+                  >Gaming</a
+                >
+                <a class="name" href="#"
+                  >Every Photographer Needs To Shoot This Photo</a
+                >
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+              <div
+                class="d-block w-100 image"
+                style="background-image: url('./img/vincent-branciforti.jpg')"
+              ></div>
+              <a href="#" class="wrapper-link"></a>
+            </div>
+            <div class="carousel-item" data-interval="4000">
+              <div class="banner">
+                <a href="#" role="button" class="btn btn-danger btn-sm"
+                  >Active</a
+                >
+                <a class="name" href="#"
+                  >Have A Good Time With My Friend And Enjoyed</a
+                >
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+              <div
+                class="d-block w-100 image"
+                style="background-image: url('./img/daniel-olah.jpg')"
+              ></div>
+              <a href="#" class="wrapper-link"></a>
+            </div>
+            <div class="carousel-item" data-interval="4000">
+              <div class="banner">
+                <a
+                  href="#"
+                  role="button"
+                  class="btn btn-sm"
+                  style="background-color: var(--orange)"
+                  >Science</a
+                >
+                <a class="name" href="#"
+                  >This Is A Great Photo And Nice For Shooting</a
+                >
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+              <div
+                class="d-block w-100 image"
+                style="background-image: url('./img/daniel-korpai.jpg')"
+              ></div>
+              <a href="#" class="wrapper-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
