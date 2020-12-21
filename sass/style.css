@@ -9,12 +9,6 @@ html, body {
   }
 }
 
-@media screen and (max-width: 993px) {
-  html, body {
-    font-size: 13px;
-  }
-}
-
 header {
   background: -webkit-gradient(linear, left top, right top, from(#3A4CB4), to(#FD1D1D));
   background: linear-gradient(to right, #3A4CB4 0%, #FD1D1D 100%);
@@ -389,6 +383,10 @@ section.editorsChoise .container .row .col .card .card-header .link {
 
 section.editorsChoise .container .row .col .card .card-header .link .card-img-overlay {
   bottom: inherit !important;
+}
+
+section.editorsChoise .container .row .col .card .card-header .link .card-img-overlay button {
+  color: white;
 }
 
 section.editorsChoise .container .row .col .card .card-header .link img {
