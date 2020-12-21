@@ -96,6 +96,7 @@ header
 
 section.slider
     height: 600px
+    margin-top: 50px
     @media screen and ( max-width: 767px )
         height: 400px
     .container
@@ -104,7 +105,6 @@ section.slider
         height: 100%
         margin: 0
         .carousel
-            margin-top: 50px
             height: 100%
             .carousel-inner
                 height: 100%
@@ -118,6 +118,8 @@ section.slider
                         left: 0
                         width: 100%
                         height: 600px
+                        background-color: rgba(0,0,0,.2)
+                        border-radius: 10px
                         @media screen and ( max-width: 767px )
                             height: 400px
                         &:hover
@@ -141,6 +143,7 @@ section.slider
                         a.btn
                             color: white
                             text-transform: uppercase
+                            font-size: 0.9rem
                         a.name
                             font-size: 2rem
                             font-weight: bolder
@@ -171,11 +174,12 @@ section.slider
                         top: 0
                         left: 0
                         height: 600px
+                        border-radius: 10px
                         @media screen and ( max-width: 767px )
                             height: 400px
-                        background-size: cover
-                        background-position: center center
-                        border-radius: 10px
+                            background-size: cover
+                            background-position: center center
+                            border-radius: 10px
                 .carousel-item.active
                     opacity: 1
             ol
@@ -209,3 +213,61 @@ section.slider
                         cursor: pointer
                         span
                             color: #fff
+
+section.editorsChoise
+    height: 100vh
+    margin-top: 50px
+    font-family: "Poppins", sans-serif
+    .container
+        max-width: 1170px
+        .row
+            .col
+                height: auto
+                margin-bottom: 50px
+                .card
+                    border: none
+                    .card-header
+                        border: none
+                        padding: 0
+                        .link
+                            display: block
+                            width: 100%
+                            height: auto
+                            border-radius: 10px !important
+                            .card-img-overlay
+                                bottom: inherit !important
+                            img
+                                border-radius: 10px !important
+                    .card-body
+                        h5
+                            font-size: 1.4rem
+                            a
+                                color: black
+                                font-weight: bolder
+                                transition: all .4s ease 0s
+                                &:hover
+                                    color: #FF4200
+                                    text-decoration: none
+                                    cursor: pointer
+                        .user
+                            display: flex
+                            align-items: center
+                            img
+                                width: 26px
+                                border-radius: 13px
+                                margin-right: 3px
+                            a
+                                font-size: .9rem
+                                color: #818181
+                                margin-right: 10px
+                                &:hover
+                                    cursor: pointer
+                                    text-decoration: none
+                            i,span
+                                margin: 0 3px
+                                font-size: .9rem
+                                color: #818181
+                        .card-text
+                            margin-top: 10px
+                            color: #777777
+

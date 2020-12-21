@@ -9,6 +9,12 @@ html, body {
   }
 }
 
+@media screen and (max-width: 993px) {
+  html, body {
+    font-size: 13px;
+  }
+}
+
 header {
   background: -webkit-gradient(linear, left top, right top, from(#3A4CB4), to(#FD1D1D));
   background: linear-gradient(to right, #3A4CB4 0%, #FD1D1D 100%);
@@ -144,6 +150,7 @@ header .container .right_bar span {
 
 section.slider {
   height: 600px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -160,7 +167,6 @@ section.slider .container {
 }
 
 section.slider .container .carousel {
-  margin-top: 50px;
   height: 100%;
 }
 
@@ -181,6 +187,8 @@ section.slider .container .carousel .carousel-inner .carousel-item .wrapper-link
   left: 0;
   width: 100%;
   height: 600px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -227,6 +235,7 @@ section.slider .container .carousel .carousel-inner .carousel-item .banner {
 section.slider .container .carousel .carousel-inner .carousel-item .banner a.btn {
   color: white;
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 section.slider .container .carousel .carousel-inner .carousel-item .banner a.name {
@@ -277,14 +286,15 @@ section.slider .container .carousel .carousel-inner .carousel-item .image {
   top: 0;
   left: 0;
   height: 600px;
-  background-size: cover;
-  background-position: center center;
   border-radius: 10px;
 }
 
 @media screen and (max-width: 767px) {
   section.slider .container .carousel .carousel-inner .carousel-item .image {
     height: 400px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
   }
 }
 
@@ -344,4 +354,97 @@ section.slider .container .carousel ol .indicator:hover {
 
 section.slider .container .carousel ol .indicator:hover span {
   color: #fff;
+}
+
+section.editorsChoise {
+  height: 100vh;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+section.editorsChoise .container {
+  max-width: 1170px;
+}
+
+section.editorsChoise .container .row .col {
+  height: auto;
+  margin-bottom: 50px;
+}
+
+section.editorsChoise .container .row .col .card {
+  border: none;
+}
+
+section.editorsChoise .container .row .col .card .card-header {
+  border: none;
+  padding: 0;
+}
+
+section.editorsChoise .container .row .col .card .card-header .link {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px !important;
+}
+
+section.editorsChoise .container .row .col .card .card-header .link .card-img-overlay {
+  bottom: inherit !important;
+}
+
+section.editorsChoise .container .row .col .card .card-header .link img {
+  border-radius: 10px !important;
+}
+
+section.editorsChoise .container .row .col .card .card-body h5 {
+  font-size: 1.4rem;
+}
+
+section.editorsChoise .container .row .col .card .card-body h5 a {
+  color: black;
+  font-weight: bolder;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+}
+
+section.editorsChoise .container .row .col .card .card-body h5 a:hover {
+  color: #FF4200;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section.editorsChoise .container .row .col .card .card-body .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.editorsChoise .container .row .col .card .card-body .user img {
+  width: 26px;
+  border-radius: 13px;
+  margin-right: 3px;
+}
+
+section.editorsChoise .container .row .col .card .card-body .user a {
+  font-size: .9rem;
+  color: #818181;
+  margin-right: 10px;
+}
+
+section.editorsChoise .container .row .col .card .card-body .user a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section.editorsChoise .container .row .col .card .card-body .user i, section.editorsChoise .container .row .col .card .card-body .user span {
+  margin: 0 3px;
+  font-size: .9rem;
+  color: #818181;
+}
+
+section.editorsChoise .container .row .col .card .card-body .card-text {
+  margin-top: 10px;
+  color: #777777;
 }
