@@ -9,6 +9,10 @@ html, body {
   }
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 header {
   background: -webkit-gradient(linear, left top, right top, from(#3A4CB4), to(#FD1D1D));
   background: linear-gradient(to right, #3A4CB4 0%, #FD1D1D 100%);
@@ -60,12 +64,14 @@ header .container .right_bar span {
   height: 70px;
   border-bottom: 1px solid #eee;
   font-family: "Poppins", sans-serif;
+  z-index: 10000;
 }
 
 .main_menu .container {
   max-width: 1170px;
   width: 100%;
   height: 100%;
+  padding: 0;
   margin: 0;
 }
 
@@ -75,6 +81,7 @@ header .container .right_bar span {
 }
 
 .main_menu .container .row .navbar {
+  padding: 0 15px !important;
   width: 100%;
   padding: 0;
   height: 100%;
@@ -351,7 +358,6 @@ section.slider .container .carousel ol .indicator:hover span {
 }
 
 section.editorsChoise {
-  height: 100vh;
   margin-top: 50px;
   font-family: "Poppins", sans-serif;
 }
@@ -360,9 +366,13 @@ section.editorsChoise .container {
   max-width: 1170px;
 }
 
+section.editorsChoise .container h2 {
+  font-weight: bolder;
+}
+
 section.editorsChoise .container .row .col {
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 section.editorsChoise .container .row .col .card {
@@ -445,4 +455,184 @@ section.editorsChoise .container .row .col .card .card-body .user i, section.edi
 section.editorsChoise .container .row .col .card .card-body .card-text {
   margin-top: 10px;
   color: #777777;
+}
+
+section.totw {
+  background-color: #FDEEDC;
+  font-family: "Poppins", sans-serif;
+}
+
+section.totw .container {
+  max-width: 1170px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+section.totw .container h2 {
+  font-weight: bolder;
+}
+
+section.totw .container .card {
+  height: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 993px) {
+  section.totw .container .card {
+    height: 350px;
+  }
+}
+
+section.totw .container .card .card-header {
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+section.totw .container .card .card-header .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-color: #00000059;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+section.totw .container .card .card-header .card-img-overlay {
+  padding-right: 15%;
+}
+
+section.totw .container .card .card-header .card-img-overlay a.btn {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 80px;
+  margin: 3px 0;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner {
+  position: absolute;
+  bottom: 25px;
+  z-index: 100;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner a.name {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #ffffffd0;
+  margin: 3px 0;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner a.name:hover {
+  color: white;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px 0;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner .user img {
+  width: 26px;
+  border-radius: 13px;
+  margin-right: 3px;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner .user a {
+  font-size: 1rem;
+  color: #ffffffd0;
+  margin-right: 10px;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner .user a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+section.totw .container .card .card-header .card-img-overlay .banner .user i, section.totw .container .card .card-header .card-img-overlay .banner .user span {
+  margin: 0 3px;
+  font-size: 1rem;
+  color: white;
+}
+
+section.totw .container .item a > img {
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 993px) {
+  section.totw .container .item a > img {
+    width: 100px;
+  }
+}
+
+section.totw .container .item .right {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.totw .container .item .right .btn {
+  font-size: .7rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+section.totw .container .item .right .link {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media screen and (max-width: 993px) {
+  section.totw .container .item .right .link {
+    font-size: 1.2rem;
+  }
+}
+
+section.totw .container .item .right .link:hover {
+  color: #FF4200;
+}
+
+section.totw .container .item .right .date {
+  font-size: .8rem;
+  color: #818181;
+}
+
+section.totw .container .mt-5 .card {
+  height: 300px;
+}
+
+@media screen and (max-width: 993px) {
+  section.totw .container .mt-5 .card {
+    height: 600px;
+  }
+}
+
+section.totw .container .mt-5 .card .card-header .card-img-overlay a.btn {
+  z-index: 100;
+}
+
+section.totw .container .mt-5 .card .card-header .card-img-overlay .banner .name {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+section.totw .container .mt-5 .card .card-header .card-img-overlay .banner .user {
+  font-size: .8rem;
 }
