@@ -44,6 +44,7 @@ header
     border-bottom: 1px solid #eee
     font-family: "Poppins", sans-serif
     z-index: 10000
+    background-color: white
     .container
         max-width: 1170px
         width: 100%
@@ -86,7 +87,33 @@ header
                     img
                         width: 100px
                 .icons
-                    a
+                    .modal-content
+                        border: none
+                        border-radius: 0
+                        width: 100vw
+                        height: 100vh
+                        background-color: #ffffffee
+                        .modal-body
+                            position: relative
+                            input
+                                font-size: 3rem
+                                font-weight: bolder
+                                border: none
+                                background: none
+                                border-bottom: 1px solid black
+                            button
+                                position: absolute
+                                top: 50px
+                                right: 50px
+                                border: none
+                                color: black
+                                background: none
+                                font-size: 3rem
+                                &:hover
+                                    color: black
+                                    background: none
+                    a,button
+                        border: none
                         margin-left: 3px
                         display: inline-block
                         text-align: center
@@ -98,8 +125,9 @@ header
                         height: 40px
                         border-radius: 20px
                         transition: all .3s
-                        &:hover
+                        &:hover, &:focus
                             background: #E5E5E5
+                            outline: none
 
 section.slider
     height: 600px
@@ -294,8 +322,6 @@ section.totw
         .card
             height: 100%
             border: none
-            @media screen and ( max-width: 993px )
-                height: 350px
             .card-header
                 height: 100%
                 border: none
@@ -303,6 +329,8 @@ section.totw
                 padding: 0
                 background-size: cover
                 background-position: center center
+                @media screen and (max-width: 993px)
+                    padding-bottom: 80%
                 .link
                     position: absolute
                     top: 0
@@ -352,6 +380,9 @@ section.totw
                                 font-size: 1rem
                                 color: white
         .item
+            &.first-item
+                @media screen and (max-width: 993px)
+                    margin-top: 15px
             a > img
                 border-radius: 10px
                 margin-right: 15px
@@ -377,10 +408,8 @@ section.totw
                     color: #818181
         .mt-5
             .card
-                height: 300px
-                @media screen and ( max-width: 993px )
-                    height: 600px
                 .card-header
+                    padding-bottom: 80%
                     .card-img-overlay
                         a.btn
                             z-index: 100
@@ -392,3 +421,346 @@ section.totw
                             .user
                                 font-size: .8rem
 
+section.big
+    font-family: "Poppins",sans-serif
+    .container
+        max-width: 1170px
+        width: 100%
+        height: 100%
+        margin: 0
+    .col-12
+        .post
+            margin-bottom: 50px
+            @media screen and (max-width: 769px)
+                margin-bottom: 10px
+            .img
+                display: block
+                width: 100%
+                height: 100%
+                background-size: cover
+                background-position: center center
+                border-radius: 10px
+                @media screen and (max-width: 769px)
+                    padding-bottom: 60%
+            .head
+                color: #777777
+                font-size: .9rem
+                @media screen and (max-width: 769px)
+                    margin-top: 15px
+                .btn
+                    color: white
+                    margin-right: 10px
+                    border-radius: 5px
+                    text-transform: uppercase
+                span
+                    margin: 0 5px
+                i
+                    color: #777777
+                    margin-right: 2px
+                .fa-comment
+                    margin-left: 5px
+                    transition: all .3s
+                    &:hover
+                        color: black
+            .name
+                margin: 10px 0
+                line-height: 1.7rem
+                font-size: 1.5rem
+                font-weight: bolder
+                color: black
+                transition: all .4s
+                &:hover
+                    color: #FF4200
+            p.text
+                color: #777777
+                font-weight: bold
+    .soc-links
+        padding: 0 15px
+        .col-3
+            padding: 1.5px
+            .soc
+                background-color: #F8F9FA
+                display: flex
+                flex-direction: column
+                justify-content: space-evenly
+                align-items: center
+                color: black
+                font-size: 1.5rem
+                padding: 10px 0
+                i
+                    margin-bottom: 8px
+                .number
+                    font-size: .9rem
+                    font-weight: bolder
+                .type
+                    margin-top: 5px
+                    font-size: .7rem
+                .fa-facebook-f
+                    color: #45629F
+                .fa-instagram
+                    color: #125D8F
+                .fa-pinterest
+                    color: #FF4200
+                .fa-twitch
+                    color: #6341A4
+                .fa-twitter
+                    color: #5EB2EF
+                .fa-vimeo-v
+                    color: #1AB7EA
+                .fa-youtube
+                    color: #C61D23
+                .fa-linkedin-in
+                    color: #0077B5
+    .badges
+        margin-top: 30px
+        .col-12
+            margin: 10px 0
+            a
+                display: flex
+                width: 100%
+                background-size: cover
+                background-position: center center
+                padding: 20px 15px
+                color: white
+                border-radius: 8px
+                justify-content: space-between
+                .name
+                    font-size: .9rem
+                .badge
+                    background-color: white
+                    color: black
+                    border-radius: 25px
+                    font-size: .9rem
+                    padding: 5px 10px
+                    font-weight: normal
+    .recent-posts
+        margin-top: 30px
+        h2
+            font-weight: bolder
+            font-size: 1.7rem
+            color: black
+        .col-12
+            margin: 10px 0
+            .row
+                .col-8
+                    .btn
+                        color: white
+                        text-transform: uppercase
+                    .name
+                        color: black
+                        font-size: 1.2rem
+                        font-weight: bold
+                        line-height: 1.4rem
+                        margin: 5px 0
+                        transition: all .4s
+                        &:hover
+                            color: #FF4200
+                    .date
+                        color: #777777
+                        font-size: .8rem
+                .col-4
+                    display: flex
+                    justify-content: flex-end
+                    a > img
+                        border-radius: 10px
+    .slider
+        margin-top: 50px
+        .carousel
+            .carousel-item
+                height: 400px
+                background-size: cover
+                background-position: center center
+                border-radius: 10px
+                .overlay
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    z-index: 10
+                    background-color: #00000041
+                    border-radius: 10px
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: flex-start
+                    padding: 15px
+                    .btn
+                        width: 80px
+                        color: white
+                        text-transform: uppercase
+                    .name
+                        color: white
+                        font-size: 1.2rem
+                        font-weight: bolder
+                    .user
+                        img
+                            width: 26px
+                            border-radius: 13px
+                            margin-right: 10px
+                        a,i,span
+                            color: white
+                            font-size: .8rem
+                            margin-right: 3px
+            .carousel-control-prev
+                position: absolute
+                z-index: 10
+                top: 10px
+                right: 50px
+                left: inherit
+                height: 40px
+                width: 40px
+                border-radius: 20px
+                background-color: #cccccc98
+            .carousel-control-next
+                position: absolute
+                z-index: 10
+                top: 10px
+                right: 5px
+                left: inherit
+                height: 40px
+                width: 40px
+                border-radius: 20px
+                background-color: #cccccc98
+    .card
+        width: 100%
+        border: none
+        .card-header
+            border: none
+            padding: 0
+            .link
+                display: block
+                width: 100%
+                height: auto
+                border-radius: 10px !important
+                .card-img-overlay
+                    bottom: inherit !important
+                    button
+                        font-size: .8rem
+                        color: white
+                        text-transform: uppercase
+                img
+                    border-radius: 10px !important
+        .card-body
+            h5
+                font-size: 1.2rem
+                line-height: 1.4rem
+                font-weight: bolder
+                a
+                    color: black
+                    transition: all .4s ease 0s
+                    &:hover
+                        color: #FF4200
+                        text-decoration: none
+                        cursor: pointer
+            .user
+                display: flex
+                align-items: center
+                img
+                    width: 26px
+                    border-radius: 13px
+                    margin-right: 3px
+                a
+                    font-size: .8rem
+                    color: #818181
+                    margin-right: 10px
+                    &:hover
+                        cursor: pointer
+                        text-decoration: none
+                i,span
+                    margin: 0 3px
+                    font-size: .8rem
+                    color: #818181
+
+footer
+    background-color: #030303
+    color: white
+    .container
+        max-width: 1170px
+        width: 100%
+        height: 100%
+        margin: 0
+    .content
+        border-bottom: 1px solid #999999
+        .container
+            h3
+                font-weight: bolder
+            .about-us-text
+                color: #999999
+            .soc-icons
+                a
+                    background-color: #3B5999
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 1.4rem
+                    width: 40px
+                    height: 40px
+                    border-radius: 20px
+                    margin: 7px
+                    color: white
+                    &:nth-child(even)
+                        background-color: #DD4B39
+            .recent-posts
+                h2
+                    font-weight: bolder
+                    font-size: 1.7rem
+                    color: black
+                .col-12
+                    margin: 10px 0
+                    .row
+                        .col-8
+                            .btn
+                                color: white
+                                text-transform: uppercase
+                            .name
+                                color: white
+                                font-size: 1.2rem
+                                font-weight: bold
+                                line-height: 1.4rem
+                                margin: 5px 0
+                                transition: all .4s
+                                &:hover
+                                    color: #FF4200
+                            .date
+                                color: #777777
+                                font-size: .8rem
+                        .col-4
+                            display: flex
+                            justify-content: flex-end
+                            a > img
+                                border-radius: 10px
+            ul
+                list-style-type: none
+                padding-left: 0
+                li
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 10px 0
+                    border-bottom: 1px solid #202020
+                    .badge
+                        color: white
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 23px
+                        height: 23px
+                        border-radius: 50%
+                        font-size: .85rem
+                    a
+                        color: white
+                        &:hover
+                            text-decoration: underline
+    .bottom
+        p
+            font-size: .8rem
+            color: #999999
+        a
+            font-size: .8rem
+            color: #999999
+            margin-left: 10px
+        .col-12
+            @media screen and ( max-width: 993px )
+                justify-content: flex-start !important
+                margin-top: 10px

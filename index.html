@@ -160,8 +160,40 @@
                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#"><i class="fab fa-behance"></i></a>
               </div>
-              <a href="#"><i class="fas fa-search"></i></a>
-              <a href="#"><i class="fas fa-bars"></i></a>
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target="#search-modal"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+              <button type="button" data-target="">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div
+                class="modal fade"
+                id="search-modal"
+                role="dialog"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog h-100 m-0">
+                  <div class="modal-content">
+                    <div
+                      class="modal-body d-flex justify-content-center align-items-center"
+                    >
+                      <input type="text" placeholder="Search..." />
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
@@ -591,7 +623,7 @@
           <div class="col-lg-4 col-md-12 col-sm-12 col-12">
             <div class="row">
               <div class="col-12 mb-4">
-                <div class="item d-flex justify-content-start">
+                <div class="item first-item d-flex justify-content-start">
                   <a href="#">
                     <img src="./img/almos-bechtold-120x120.jpg" alt="..." />
                   </a>
@@ -692,10 +724,12 @@
                 "
               >
                 <a class="link" href="#"></a>
-                <div class="card-img-overlay d-flex flex-column justify-content-between">
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-between"
+                >
                   <a href="#" role="button" class="btn btn-success btn-sm"
-                      >Health</a
-                    >
+                    >Health</a
+                  >
                   <div class="banner d-flex flex-column">
                     <a class="name" href="#"
                       >This is a great toy and beautiful for short</a
@@ -715,15 +749,15 @@
             <div class="card">
               <div
                 class="card-header"
-                style="
-                  background-image: url('./img/rawpixel-780x450.jpg');
-                "
+                style="background-image: url('./img/rawpixel-780x450.jpg')"
               >
                 <a class="link" href="#"></a>
-                <div class="card-img-overlay d-flex flex-column justify-content-between">
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-between"
+                >
                   <a href="#" role="button" class="btn btn-danger btn-sm"
-                      >Active</a
-                    >
+                    >Active</a
+                  >
                   <div class="banner d-flex flex-column">
                     <a class="name" href="#"
                       >This is my favourite fashion that i watching</a
@@ -743,15 +777,15 @@
             <div class="card">
               <div
                 class="card-header"
-                style="
-                  background-image: url('./img/taylor-grote-780x450.jpg');
-                "
+                style="background-image: url('./img/taylor-grote-780x450.jpg')"
               >
                 <a class="link" href="#"></a>
-                <div class="card-img-overlay d-flex flex-column justify-content-between">
+                <div
+                  class="card-img-overlay d-flex flex-column justify-content-between"
+                >
                   <a href="#" role="button" class="btn btn-danger btn-sm"
-                      >Active</a
-                    >
+                    >Active</a
+                  >
                   <div class="banner d-flex flex-column">
                     <a class="name" href="#"
                       >Nice Photo, nice colors and i can’t wait to try</a
@@ -770,6 +804,831 @@
         </div>
       </div>
     </section>
+    <section class="big py-5 d-flex justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="row post">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <a
+                      href="#"
+                      class="img"
+                      style="background-image: url('./img/pexels-780x450.jpg')"
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div class="head d-flex align-items-center">
+                      <a href="#" role="button" class="btn btn-sm btn-danger"
+                        >Active</a
+                      >
+                      <i class="far fa-clock"></i>
+                      <span>Dec 24, 2016</span>
+                      <a href="#">
+                        <i class="fas fa-comment"></i>
+                      </a>
+                      <span>0</span>
+                    </div>
+                    <a href="#" class="name"
+                      >Outdoor photo shooting with sexy and beautiful</a
+                    >
+                    <p class="text">
+                      Mauris mattis auctor cursus. Phasellus tellus tellus,
+                      imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula
+                      luctus nunc in laoreet. Aliquam erat volutpat....
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row post">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <a
+                      href="#"
+                      class="img"
+                      style="
+                        background-image: url('./img/michael-browning-780x450.jpg');
+                      "
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div class="head d-flex align-items-center">
+                      <a href="#" role="button" class="btn btn-sm btn-warning"
+                        >Scince</a
+                      >
+                      <i class="far fa-clock"></i>
+                      <span>Dec 24, 2016</span>
+                      <a href="#">
+                        <i class="fas fa-comment"></i>
+                      </a>
+                      <span>0</span>
+                    </div>
+                    <a href="#" class="name"
+                      >Hiding face is great way make you unique</a
+                    >
+                    <p class="text">
+                      Mauris mattis auctor cursus. Phasellus tellus tellus,
+                      imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula
+                      luctus nunc in laoreet. Aliquam erat volutpat....
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row post">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <a
+                      href="#"
+                      class="img"
+                      style="
+                        background-image: url('./img/felipe-sagn-780x450.jpg');
+                      "
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div class="head d-flex align-items-center">
+                      <a href="#" role="button" class="btn btn-sm btn-warning"
+                        >Scince</a
+                      >
+                      <i class="far fa-clock"></i>
+                      <span>Dec 24, 2016</span>
+                      <a href="#">
+                        <i class="fas fa-comment"></i>
+                      </a>
+                      <span>0</span>
+                    </div>
+                    <a href="#" class="name"
+                      >Music will be more attractive if have guitar</a
+                    >
+                    <p class="text">
+                      Mauris mattis auctor cursus. Phasellus tellus tellus,
+                      imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula
+                      luctus nunc in laoreet. Aliquam erat volutpat....
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row post">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <a
+                      href="#"
+                      class="img"
+                      style="
+                        background-image: url('./img/daniel-korpai-1435296-unsplash-780x450.jpg');
+                      "
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div class="head d-flex align-items-center">
+                      <a href="#" role="button" class="btn btn-sm btn-success"
+                        >Sports</a
+                      >
+                      <i class="far fa-clock"></i>
+                      <span>Dec 24, 2016</span>
+                      <a href="#">
+                        <i class="fas fa-comment"></i>
+                      </a>
+                      <span>0</span>
+                    </div>
+                    <a href="#" class="name"
+                      >10 best place for your travel around the world</a
+                    >
+                    <p class="text">
+                      Mauris mattis auctor cursus. Phasellus tellus tellus,
+                      imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula
+                      luctus nunc in laoreet. Aliquam erat volutpat....
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row post">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <a
+                      href="#"
+                      class="img"
+                      style="
+                        background-image: url('./img/ashley-knedler-90856-unsplash-780x450.jpg');
+                      "
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div class="head d-flex align-items-center">
+                      <a href="#" role="button" class="btn btn-sm btn-success"
+                        >Sports</a
+                      >
+                      <i class="far fa-clock"></i>
+                      <span>Dec 24, 2016</span>
+                      <a href="#">
+                        <i class="fas fa-comment"></i>
+                      </a>
+                      <span>0</span>
+                    </div>
+                    <a href="#" class="name"
+                      >Enjoy your work and do what ever you want</a
+                    >
+                    <p class="text">
+                      Mauris mattis auctor cursus. Phasellus tellus tellus,
+                      imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula
+                      luctus nunc in laoreet. Aliquam erat volutpat....
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row post">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <a
+                      href="#"
+                      class="img"
+                      style="
+                        background-image: url('./img/jeshoots-com-523925-unsplash-780x450.jpg');
+                      "
+                    ></a>
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-start justify-content-between"
+                  >
+                    <div class="head d-flex align-items-center">
+                      <a href="#" role="button" class="btn btn-sm btn-success"
+                        >Sports</a
+                      >
+                      <i class="far fa-clock"></i>
+                      <span>Dec 24, 2016</span>
+                      <a href="#">
+                        <i class="fas fa-comment"></i>
+                      </a>
+                      <span>0</span>
+                    </div>
+                    <a href="#" class="name"
+                      >This is all i need for my vocation in this week</a
+                    >
+                    <p class="text">
+                      Mauris mattis auctor cursus. Phasellus tellus tellus,
+                      imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula
+                      luctus nunc in laoreet. Aliquam erat volutpat....
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="row soc-links">
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Likes</span>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-instagram"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Followers</span>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-pinterest"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Followers</span>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-twitch"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Followers</span>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-twitter"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Followers</span>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-vimeo-v"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Followers</span>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-youtube"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Followers</span>
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#" class="soc">
+                      <i class="fab fa-linkedin-in"></i>
+                      <span class="number">20,5k</span>
+                      <span class="type">Followers</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row badges">
+                  <div class="col-12">
+                    <a
+                      href="#"
+                      style="
+                        background-image: url('./img/annie-spratt-70918-unsplash-400x280.jpg');
+                      "
+                    >
+                      <span class="name">Active</span>
+                      <span class="badge">11</span>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      href="#"
+                      style="
+                        background-image: url('./img/soroush-karimi-253940-unsplash-400x280.jpg');
+                      "
+                    >
+                      <span class="name">Business</span>
+                      <span class="badge">10</span>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      href="#"
+                      style="
+                        background-image: url('./img/pexels-photo-1003816-400x280.jpg');
+                      "
+                    >
+                      <span class="name">Crazy</span>
+                      <span class="badge">5</span>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      href="#"
+                      style="
+                        background-image: url('./img/christopher-burns-617704-unsplash-400x280.jpg');
+                      "
+                    >
+                      <span class="name">Gaming</span>
+                      <span class="badge">10</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 recent-posts">
+                <h2>Recent Posts</h2>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row">
+                      <div
+                        class="col-8 d-flex flex-column align-items-start justify-content-between"
+                      >
+                        <a
+                          href="#"
+                          role="button"
+                          class="btn btn-sm"
+                          style="background-color: var(--indigo)"
+                          >Techno</a
+                        >
+                        <a href="#" class="name">
+                          Sitting right here waiting for you come to me
+                        </a>
+                        <div class="date">
+                          <i class="far fa-clock"></i>
+                          <span>Dec 24, 2016</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <a href="#">
+                          <img
+                            src="./img/sawyer-bengtson-1331688-unsplash-120x120.jpg"
+                            alt="..."
+                            width="100"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div
+                        class="col-8 d-flex flex-column align-items-start justify-content-between"
+                      >
+                        <a href="#" role="button" class="btn btn-sm btn-danger"
+                          >Active</a
+                        >
+                        <a href="#" class="name">
+                          Sitting right here waiting for you come to me
+                        </a>
+                        <div class="date">
+                          <i class="far fa-clock"></i>
+                          <span>Dec 24, 2016</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <a href="#">
+                          <img
+                            src="./img/susan-yin-698530-unsplash-120x120.jpg"
+                            alt="..."
+                            width="100"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div
+                        class="col-8 d-flex flex-column align-items-start justify-content-between"
+                      >
+                        <a href="#" role="button" class="btn btn-sm btn-danger"
+                          >Active</a
+                        >
+                        <a href="#" class="name">
+                          Beautiful flying bikes with simple style but look good
+                        </a>
+                        <div class="date">
+                          <i class="far fa-clock"></i>
+                          <span>Dec 24, 2016</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <a href="#">
+                          <img
+                            src="./img/melissa-walker-horn-1058236-unsplash-120x120.jpg"
+                            alt="..."
+                            width="100"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="slider">
+                  <div
+                    id="carouselExampleInterval"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <div class="carousel-inner">
+                      <div
+                        class="carousel-item active"
+                        data-interval="2000"
+                        style="
+                          background-image: url('./img/banter-snaps-1438384-unsplash-380x350.jpg');
+                        "
+                      >
+                        <div class="overlay">
+                          <button type="button" class="btn btn-sm btn-danger">
+                            Active
+                          </button>
+                          <div class="">
+                            <a href="#" class="name">
+                              Standing right here and singing until the mid
+                            </a>
+                            <div class="user">
+                              <img src="./img/favicon.jpg" alt="." />
+                              <a href="#">Anna Novikova</a>
+                              <i class="far fa-clock"></i>
+                              <span>Dec 24, 2016</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="carousel-item"
+                        data-interval="2000"
+                        style="
+                          background-image: url('./img/bartosz-wanot-133401-unsplash-380x350.jpg');
+                        "
+                      >
+                        <div class="overlay">
+                          <button
+                            type="button"
+                            class="btn btn-sm"
+                            style="background-color: var(--indigo)"
+                          >
+                            Gaming
+                          </button>
+                          <div class="">
+                            <a href="#" class="name"
+                              >You can make your art with canyon color</a
+                            >
+                            <div class="user">
+                              <img src="./img/favicon.jpg" alt="." />
+                              <a href="#">Anna Novikova</a>
+                              <i class="far fa-clock"></i>
+                              <span>Dec 24, 2016</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselExampleInterval"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselExampleInterval"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-header">
+                <a class="link" href="#">
+                  <div class="card-img-overlay">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="background-color: var(--green)"
+                    >
+                      Sports
+                    </button>
+                  </div>
+                  <img
+                    class="card-img-top w-100"
+                    src="./img/toa-heftiba-686126-unsplash-400x280.jpg"
+                    alt="..."
+                  />
+                </a>
+              </div>
+              <div class="card-body px-0">
+                <h5>
+                  <a href="#">This place really good place for reading</a>
+                </h5>
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-header">
+                <a class="link" href="#">
+                  <div class="card-img-overlay">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="background-color: var(--green)"
+                    >
+                      Sports
+                    </button>
+                  </div>
+                  <img
+                    class="card-img-top w-100"
+                    src="./img/ben-blennerhassett-300784-unsplash-400x280.jpg"
+                    alt="..."
+                  />
+                </a>
+              </div>
+              <div class="card-body px-0">
+                <h5>
+                  <a href="#">Having fun with DJ and the best music drop</a>
+                </h5>
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-header">
+                <a class="link" href="#">
+                  <div class="card-img-overlay">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="background-color: var(--indigo)"
+                    >
+                      Techno
+                    </button>
+                  </div>
+                  <img
+                    class="card-img-top w-100"
+                    src="./img/matthew-hamilton-202227-unsplash-400x280.jpg"
+                    alt="..."
+                  />
+                </a>
+              </div>
+              <div class="card-body px-0">
+                <h5>
+                  <a href="#"
+                    >This guitar sound is so good and i need it more</a
+                  >
+                </h5>
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-header">
+                <a class="link" href="#">
+                  <div class="card-img-overlay">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="background-color: var(--indigo)"
+                    >
+                      Techno
+                    </button>
+                  </div>
+                  <img
+                    class="card-img-top w-100"
+                    src="./img/angel-jimenez-168185-unsplash-1-400x280.jpg"
+                    alt="..."
+                  />
+                </a>
+              </div>
+              <div class="card-body px-0">
+                <h5>
+                  <a href="#">Technology can make your live easy and fast</a>
+                </h5>
+                <div class="user">
+                  <img src="./img/favicon.jpg" alt="." />
+                  <a href="#">Anna Novikova</a>
+                  <i class="far fa-clock"></i>
+                  <span>Dec 24, 2016</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="content d-flex justify-content-center">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <h3>About Us</h3>
+              <p class="about-us-text">
+                Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet
+                ut imperdiet eu, iaculis a sem imperdiet ut imperdiet.
+              </p>
+              <div class="soc-icons px-1">
+                <div class="row">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-behance"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-vimeo"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-tumblr"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-behance"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-vimeo"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-tumblr"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <h3>Recent Posts</h3>
+              <div class="row recent-posts">
+                <div class="col-12">
+                  <div class="row">
+                    <div
+                      class="col-8 d-flex flex-column align-items-start justify-content-between"
+                    >
+                      <a href="#" role="button" class="btn btn-sm btn-success"
+                        >Sports</a
+                      >
+                      <a href="#" class="name">
+                        Round white dining table on brown hardwood
+                      </a>
+                      <div class="date">
+                        <i class="far fa-clock"></i>
+                        <span>Dec 24, 2016</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          src="./img/daniel-korpai-1296140-unsplash-120x120.jpg"
+                          alt="..."
+                          width="100"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div
+                      class="col-8 d-flex flex-column align-items-start justify-content-between"
+                    >
+                      <a href="#" role="button" class="btn btn-sm btn-primary"
+                        >Business</a
+                      >
+                      <a href="#" class="name">
+                        People are enjoy the job that they love
+                      </a>
+                      <div class="date">
+                        <i class="far fa-clock"></i>
+                        <span>Dec 24, 2016</span>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <a href="#">
+                        <img
+                          src="./img/irina-iriser-654436-unsplash-120x120.jpg"
+                          alt="..."
+                          width="100"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <h3>Categories</h3>
+              <ul>
+                <li>
+                  <a href="#">Active</a
+                  ><span class="badge" style="background-color: brown">11</span>
+                </li>
+                <li>
+                  <a href="#">Business</a
+                  ><span class="badge" style="background-color: blue">10</span>
+                </li>
+                <li>
+                  <a href="#">Crazy</a
+                  ><span class="badge" style="background-color: orange">5</span>
+                </li>
+                <li>
+                  <a href="#">Gaming</a
+                  ><span class="badge" style="background-color: indigo"
+                    >10</span
+                  >
+                </li>
+                <li>
+                  <a href="#">Health</a
+                  ><span class="badge" style="background-color: green">6</span>
+                </li>
+                <li>
+                  <a href="#">Science</a
+                  ><span class="badge" style="background-color: orangered"
+                    >4</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom d-flex justify-content-center">
+        <div class="container py-4">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-12">
+              <p class="m-0">
+                © Copyright 2019 Jellywp. All Rights Reserved Powered by Jellywp
+              </p>
+            </div>
+            <div class="col-lg-6 col-12 d-flex justify-content-end">
+              <a href="#">About Us</a>
+              <a href="#">Private Policy</a>
+              <a href="#">Forums</a>
+              <a href="#">Community</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
