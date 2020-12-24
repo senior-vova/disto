@@ -1,4 +1,5 @@
 @import "./_header"
+@import "./_shop"
 
 html,body
     font-family: 'Lato', sans-serif
@@ -6,8 +7,11 @@ html,body
     @media screen and (max-width: 1170px)
         font-size: 14px
 
+button
+    &:focus, &:hover
+        outline: none
 a
-    &:hover
+    &:hover, &:focus
         text-decoration: none
 
 section.slider
@@ -656,5 +660,3 @@ footer
     height: 40px
     background-color: #131313bb
     border: none
-    &:hover, &:focus
-        outline: none

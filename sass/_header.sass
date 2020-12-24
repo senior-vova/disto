@@ -7,8 +7,6 @@ header
             .top_menu
                 font-family: "Poppins", sans-serif
                 list-style-type: none
-                margin: 0
-                padding: 0
                 li
                     margin-right: 15px
                     a
@@ -19,116 +17,101 @@ header
                             color: #fff
                             text-decoration: none
         .right_bar
-            color: #ffffff
+            color: white
             span
-                display: inline-block
                 background: rgba(255, 255, 255, .15)
                 height: 20px
                 line-height: 16px
-                padding: 0px 10px
                 border-radius: 100px
-                margin-right: 10px
 .main_menu
-    width: 100%
     height: 70px
     border-bottom: 1px solid #eee
     font-family: "Poppins", sans-serif
-    z-index: 10000
+    z-index: 5000
     background-color: white
     .container
         max-width: 1170px
-        width: 100%
-        height: 100%
-        padding: 0
-        margin: 0
         .row
-            margin: 0
-            height: 100%
             .navbar
-                padding: 0 15px !important
-                width: 100%
-                padding: 0
-                height: 100%
                 background-color: #fff
                 position: static !important
-                .dropdown-menu
-                    opacity: 0
-                    margin-top: -2px
-                    transition: all .5s
-                .business-container
-                    position: absolute
-                    top: 68px
-                    left: 0
-                    right: 0
-                    width: 100vw
-                    height: auto
-                    z-index: 1000
-                    opacity: 0
-                    transition: all .5s
-                    &:hover
-                        cursor: default
-                    .container
-                        background-color: white
-                        box-shadow: 0 10px 30px 7px #00000034
-                        .card
-                            width: 100%
-                            border: none
-                            .card-header
-                                border: none
-                                padding: 0
-                                .link
-                                    display: block
-                                    width: 100%
-                                    height: auto
-                                    border-radius: 10px !important
-                                    img
-                                        border-radius: 10px !important
-                            .card-body
-                                h5
-                                    font-size: 1.2rem
-                                    line-height: 1.4rem
-                                    font-weight: bolder
-                                    a
-                                        color: black
-                                        transition: all .4s ease 0s
-                                        &:hover
-                                            color: #FF4200
-                                            text-decoration: none
-                                            cursor: pointer
-                                .user
-                                    display: flex
-                                    align-items: center
-                                    img
-                                        width: 26px
-                                        border-radius: 13px
-                                        margin-right: 3px
-                                    a
-                                        font-size: .8rem
-                                        color: #818181
-                                        margin-right: 10px
-                                        &:hover
-                                            cursor: pointer
-                                            text-decoration: none
-                                    i,span
-                                        margin: 0 3px
-                                        font-size: .8rem
-                                        color: #818181
-                .dropdown
-                    &:hover
-                        cursor: pointer
-                        .dropdown-menu
-                            display: block
-                            opacity: 1
-                .dropdown-business
-                    position: static !important
-                    &:hover
-                        cursor: default
-                        .business-container
-                            display: flex !important
-                            opacity: 1
-                ul.navbar-nav
-                    height: 100%
+                ul.navbar-nav.main
                     align-items: center
+                    .business-container
+                        position: absolute
+                        top: 68px
+                        left: 0
+                        right: 0
+                        width: 100vw
+                        height: auto
+                        z-index: 1000
+                        opacity: 0
+                        transition: all .5s
+                        &:hover
+                            cursor: default
+                        .container
+                            background-color: white
+                            box-shadow: 0 10px 30px 7px #00000034
+                            .card
+                                width: 100%
+                                border: none
+                                .card-header
+                                    border: none
+                                    padding: 0
+                                    .link
+                                        display: block
+                                        width: 100%
+                                        height: auto
+                                        border-radius: 10px !important
+                                        img
+                                            border-radius: 10px !important
+                                .card-body
+                                    h5
+                                        font-size: 1.2rem
+                                        line-height: 1.4rem
+                                        font-weight: bolder
+                                        a
+                                            color: black
+                                            transition: all .4s ease 0s
+                                            &:hover
+                                                color: #FF4200
+                                                text-decoration: none
+                                                cursor: pointer
+                                    .user
+                                        display: flex
+                                        align-items: center
+                                        img
+                                            width: 26px
+                                            border-radius: 13px
+                                            margin-right: 3px
+                                        a
+                                            font-size: .8rem
+                                            color: #818181
+                                            margin-right: 10px
+                                            &:hover
+                                                cursor: pointer
+                                                text-decoration: none
+                                        i,span
+                                            margin: 0 3px
+                                            font-size: .8rem
+                                            color: #818181
+                    .dropdown-menu
+                        opacity: 0
+                        margin-top: -2px
+                        transition: all .5s
+                    .dropdown
+                        &:hover
+                            cursor: pointer
+                            .dropdown-menu
+                                display: block
+                                opacity: 1
+                    .dropdown-business
+                        position: static !important
+                        &:hover
+                            cursor: default
+                            .business-container
+                                display: flex !important
+                                opacity: 1
                     li
                         height: 100%
                         a.nav-link
@@ -187,4 +170,95 @@ header
                         transition: all .3s
                         &:hover, &:focus
                             background: #E5E5E5
-                            outline: none
+
+.collapse-navbar-background
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100vw
+    height: 100vh
+    visibility: hidden
+    background-color: #000000cc
+    z-index: 9000
+    &.show
+        visibility: visible
+
+.navbar-collapse
+    font-family: "Poppins", sans-serif
+    position: fixed
+    top: 0
+    bottom: 0
+    right: -350px
+    width: 350px
+    z-index: 10000
+    overflow-y: auto
+    visibility: hidden
+    background-color: white
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &.show
+        visibility: visible
+        transform: translateX(-350px)
+    .offcanvas-header
+        display: block
+        #btn-close
+            background: none
+            font-size: 1.6rem
+            &:focus, &:hover
+                background: none
+    #vertical-nav
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        .nav-item
+            width: 90%
+            background: none
+            &:hover
+                background: none
+            .nav-link
+                font-size: .9rem
+                font-weight: bolder
+                padding: 0
+                width: 100%
+                background: none
+                text-align: left
+                .badge
+                    font-size: .6rem
+                &:hover
+                    background: none
+                    color: #797979
+            .menu
+                display: none
+                flex-direction: column
+                align-items: flex-start
+                width: 80%
+                margin-left: 10%
+                .item
+                    text-align: left
+                    background: none
+                    width: 100%
+                    font-size: .9rem
+                    font-weight: bold
+                    &:hover
+                        background: none
+                &.active
+                    display: flex
+    .soc-icons
+        a#icon
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 1.4rem
+            width: 40px
+            height: 40px
+            border-radius: 20px
+            margin: 7px
+            color: white
+            margin-right: 5px
