@@ -101,8 +101,8 @@ header .container .right_bar span {
 
 .main_menu .container .row .navbar .business-container .container {
   background-color: white;
-  -webkit-box-shadow: 0 0 30px 10px #0000004f;
-          box-shadow: 0 0 30px 10px #0000004f;
+  -webkit-box-shadow: 0 0 30px 7px #00000044;
+          box-shadow: 0 0 30px 7px #00000044;
 }
 
 .main_menu .container .row .navbar .business-container .container .card {
