@@ -1,0 +1,190 @@
+header
+    background: linear-gradient(to right, #3A4CB4 0%,#FD1D1D 100%)
+    height: 50px
+    .container
+        max-width: 1170px
+        .header_top_menu
+            .top_menu
+                font-family: "Poppins", sans-serif
+                list-style-type: none
+                margin: 0
+                padding: 0
+                li
+                    margin-right: 15px
+                    a
+                        font-size: 0.9rem
+                        color: #ffffffde
+                        text-decoration: none
+                        &:hover
+                            color: #fff
+                            text-decoration: none
+        .right_bar
+            color: #ffffff
+            span
+                display: inline-block
+                background: rgba(255, 255, 255, .15)
+                height: 20px
+                line-height: 16px
+                padding: 0px 10px
+                border-radius: 100px
+                margin-right: 10px
+.main_menu
+    width: 100%
+    height: 70px
+    border-bottom: 1px solid #eee
+    font-family: "Poppins", sans-serif
+    z-index: 10000
+    background-color: white
+    .container
+        max-width: 1170px
+        width: 100%
+        height: 100%
+        padding: 0
+        margin: 0
+        .row
+            margin: 0
+            height: 100%
+            .navbar
+                padding: 0 15px !important
+                width: 100%
+                padding: 0
+                height: 100%
+                background-color: #fff
+                position: static !important
+                .dropdown-menu
+                    opacity: 0
+                    margin-top: -2px
+                    transition: all .5s
+                .business-container
+                    position: absolute
+                    top: 68px
+                    left: 0
+                    right: 0
+                    width: 100vw
+                    height: auto
+                    z-index: 1000
+                    opacity: 0
+                    transition: all .5s
+                    &:hover
+                        cursor: default
+                    .container
+                        background-color: white
+                        box-shadow: 0 40px 40px 10px #0000004f
+                        .card
+                            width: 100%
+                            border: none
+                            .card-header
+                                border: none
+                                padding: 0
+                                .link
+                                    display: block
+                                    width: 100%
+                                    height: auto
+                                    border-radius: 10px !important
+                                    img
+                                        border-radius: 10px !important
+                            .card-body
+                                h5
+                                    font-size: 1.2rem
+                                    line-height: 1.4rem
+                                    font-weight: bolder
+                                    a
+                                        color: black
+                                        transition: all .4s ease 0s
+                                        &:hover
+                                            color: #FF4200
+                                            text-decoration: none
+                                            cursor: pointer
+                                .user
+                                    display: flex
+                                    align-items: center
+                                    img
+                                        width: 26px
+                                        border-radius: 13px
+                                        margin-right: 3px
+                                    a
+                                        font-size: .8rem
+                                        color: #818181
+                                        margin-right: 10px
+                                        &:hover
+                                            cursor: pointer
+                                            text-decoration: none
+                                    i,span
+                                        margin: 0 3px
+                                        font-size: .8rem
+                                        color: #818181
+                .dropdown
+                    &:hover
+                        cursor: pointer
+                        .dropdown-menu
+                            display: block
+                            opacity: 1
+                .dropdown-business
+                    position: static !important
+                    &:hover
+                        cursor: default
+                        .business-container
+                            display: flex !important
+                            opacity: 1
+                ul.navbar-nav
+                    height: 100%
+                    align-items: center
+                    li
+                        height: 100%
+                        a.nav-link
+                            line-height: 50px
+                            height: 100%
+                            color: #161616
+                            font-weight: bold
+                            .badge-pill
+                                font-size: 0.6rem
+                            &:hover
+                                color: #000000
+                .navbar-brand
+                    img
+                        width: 100px
+                .icons
+                    .modal-content
+                        border: none
+                        border-radius: 0
+                        width: 100vw
+                        height: 100vh
+                        background-color: #ffffffee
+                        .modal-body
+                            position: relative
+                            input
+                                width: 50%
+                                font-size: 3rem
+                                font-weight: bolder
+                                border: none
+                                background: none
+                                border-bottom: 1px solid black
+                                @media screen and ( max-width: 993px )
+                                    width: 80%
+                            button
+                                position: absolute
+                                top: 50px
+                                right: 50px
+                                border: none
+                                color: black
+                                background: none
+                                font-size: 3rem
+                                &:hover
+                                    color: black
+                                    background: none
+                    a,button
+                        border: none
+                        margin-left: 3px
+                        display: inline-block
+                        text-align: center
+                        line-height: 40px
+                        font-size: 1.1rem
+                        color: black
+                        background: #F2F2F2
+                        width: 40px
+                        height: 40px
+                        border-radius: 20px
+                        transition: all .3s
+                        &:hover, &:focus
+                            background: #E5E5E5
+                            outline: none

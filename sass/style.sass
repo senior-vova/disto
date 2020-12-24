@@ -1,3 +1,5 @@
+@import "./_header"
+
 html,body
     font-family: 'Lato', sans-serif
     font-size: 16px
@@ -7,127 +9,6 @@ html,body
 a
     &:hover
         text-decoration: none
-
-header
-    background: linear-gradient(to right, #3A4CB4 0%,#FD1D1D 100%)
-    height: 50px
-    .container
-        max-width: 1170px
-        .header_top_menu
-            .top_menu
-                font-family: "Poppins", sans-serif
-                list-style-type: none
-                margin: 0
-                padding: 0
-                li
-                    margin-right: 15px
-                    a
-                        font-size: 0.9rem
-                        color: #ffffffde
-                        text-decoration: none
-                        &:hover
-                            color: #fff
-                            text-decoration: none
-        .right_bar
-            color: #ffffff
-            span
-                display: inline-block
-                background: rgba(255, 255, 255, .15)
-                height: 20px
-                line-height: 16px
-                padding: 0px 10px
-                border-radius: 100px
-                margin-right: 10px
-.main_menu
-    width: 100%
-    height: 70px
-    border-bottom: 1px solid #eee
-    font-family: "Poppins", sans-serif
-    z-index: 10000
-    background-color: white
-    .container
-        max-width: 1170px
-        width: 100%
-        height: 100%
-        padding: 0
-        margin: 0
-        .row
-            margin: 0
-            height: 100%
-            .navbar
-                padding: 0 15px !important
-                width: 100%
-                padding: 0
-                height: 100%
-                background-color: #fff
-                .dropdown-menu
-                    opacity: 0
-                    margin-top: -2px
-                    transition: all .5s
-                .dropdown
-                    &:hover
-                        .dropdown-menu
-                            display: block
-                            opacity: 1
-                ul.navbar-nav
-                    height: 100%
-                    align-items: center
-                    li
-                        height: 100%
-                        a.nav-link
-                            line-height: 50px
-                            height: 100%
-                            color: #161616
-                            font-weight: bold
-                            .badge-pill
-                                font-size: 0.6rem
-                            &:hover
-                                color: #000000
-                .navbar-brand
-                    img
-                        width: 100px
-                .icons
-                    .modal-content
-                        border: none
-                        border-radius: 0
-                        width: 100vw
-                        height: 100vh
-                        background-color: #ffffffee
-                        .modal-body
-                            position: relative
-                            input
-                                font-size: 3rem
-                                font-weight: bolder
-                                border: none
-                                background: none
-                                border-bottom: 1px solid black
-                            button
-                                position: absolute
-                                top: 50px
-                                right: 50px
-                                border: none
-                                color: black
-                                background: none
-                                font-size: 3rem
-                                &:hover
-                                    color: black
-                                    background: none
-                    a,button
-                        border: none
-                        margin-left: 3px
-                        display: inline-block
-                        text-align: center
-                        line-height: 40px
-                        font-size: 1.1rem
-                        color: black
-                        background: #F2F2F2
-                        width: 40px
-                        height: 40px
-                        border-radius: 20px
-                        transition: all .3s
-                        &:hover, &:focus
-                            background: #E5E5E5
-                            outline: none
 
 section.slider
     height: 600px
@@ -518,12 +399,12 @@ section.big
             a
                 display: flex
                 width: 100%
-                background-size: cover
-                background-position: center center
                 padding: 20px 15px
                 color: white
                 border-radius: 8px
                 justify-content: space-between
+                background: url("../img/css_sprites.png") no-repeat
+                background-size: cover
                 .name
                     font-size: .9rem
                 .badge
@@ -764,3 +645,16 @@ footer
             @media screen and ( max-width: 993px )
                 justify-content: flex-start !important
                 margin-top: 10px
+
+#go-to-top-btn
+    position: fixed
+    bottom: 20px
+    right: 20px
+    border-radius: 5px
+    color: white
+    width: 40px
+    height: 40px
+    background-color: #131313bb
+    border: none
+    &:hover
+        outline: none
