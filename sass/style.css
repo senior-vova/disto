@@ -1384,6 +1384,6 @@ footer .bottom a {
   border: none;
 }
 
-#go-to-top-btn:hover {
+#go-to-top-btn:hover, #go-to-top-btn:focus {
   outline: none;
 }
