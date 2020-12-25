@@ -445,9 +445,327 @@ section.main-content {
 
 section.main-content .container {
   max-width: 1170px;
-  font-size: 2rem;
+}
+
+section.main-content .container .price del {
+  color: #A4A4A4;
+}
+
+section.main-content .container .price span {
+  color: black;
+  text-decoration: underline;
+}
+
+section.main-content .container h1 {
+  color: black;
   font-weight: bolder;
+}
+
+section.main-content .container h2 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+section.main-content .container hr {
+  border-color: #e2e3e7;
+}
+
+section.main-content .container .rating-block {
+  padding: 2px 0;
+  font-size: .7rem;
+}
+
+section.main-content .container .rating-block span i {
+  color: #D3CED2;
+}
+
+section.main-content .container .rating-block span i.checked {
+  color: #FFC902;
+}
+
+section.main-content .container .head select {
+  width: 220px;
+  text-transform: uppercase;
+  background-color: #FBFAF9;
+}
+
+section.main-content .container .head select option {
+  font-size: .8rem;
+}
+
+section.main-content .container .products .card {
+  border: none;
+  margin-bottom: 40px;
+}
+
+section.main-content .container .products .card .card-header {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+section.main-content .container .products .card .card-header .card-img-overlay {
+  padding: 0;
+  background-color: #FF4200;
+  color: white;
+  width: 45px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8rem;
+}
+
+section.main-content .container .products .card .card-header .card-link {
+  color: black;
+}
+
+section.main-content .container .products .card .card-header .card-link img {
+  border-radius: 10px;
+}
+
+section.main-content .container .products .card .card-header .card-link h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+section.main-content .container .products .card .card-header fieldset, section.main-content .container .products .card .card-header label {
+  margin: 0;
+  padding: 0;
+}
+
+section.main-content .container .products .card .card-body {
+  padding: 0;
+  margin-top: 15px;
+}
+
+section.main-content .container .products .card .card-body .card-link {
+  display: block;
   text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid #E6E6E6;
+  padding: 3px 0;
+  border-radius: 5px;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+section.main-content .container .products .card .card-body .card-link:hover {
+  color: white;
+  border-color: black;
+  background: black;
+}
+
+section.main-content .container .pagination-overlay .pagination .page-item {
+  margin: 4px;
+}
+
+section.main-content .container .pagination-overlay .pagination .page-item .page-link {
+  width: 40px;
+  height: 40px;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+section.main-content .container .pagination-overlay .pagination .page-item .page-link.active, section.main-content .container .pagination-overlay .pagination .page-item .page-link:hover {
+  background: #FF4200;
+}
+
+section.main-content .container .products-container .card {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  border: none;
+  margin-bottom: 15px;
+  height: 80px;
+}
+
+section.main-content .container .products-container .card .card-header {
+  border: none;
+  background: none;
+}
+
+section.main-content .container .products-container .card .card-header .card-link {
+  color: black;
+}
+
+section.main-content .container .products-container .card .card-header .card-link .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.main-content .container .products-container .card .card-header .card-link img {
+  border-radius: 8px;
+  width: 80px;
+  margin-right: 10px;
+  margin-bottom: 0 !important;
+}
+
+section.main-content .container .products-container .card .card-header .card-link h3 {
+  font-size: .9rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+section.main-content .container .products-container .card .card-header .card-link fieldset, section.main-content .container .products-container .card .card-header .card-link label {
+  margin: 0;
+  padding: 0;
+}
+
+section.main-content .container .average-rating ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section.main-content .container .average-rating ul li {
+  margin-bottom: 5px;
+}
+
+section.main-content .container .average-rating ul a:hover .ml-3 {
+  text-decoration: underline;
+}
+
+section.main-content .container .average-rating ul span {
+  color: black;
+  font-size: .8rem;
+}
+
+section.main-content .container .average-rating ul span i {
+  color: #D3CED2;
+}
+
+section.main-content .container .average-rating ul span i.checked {
+  color: #FFC902;
+}
+
+section.main-content .container .categories ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+section.main-content .container .categories ul li {
+  border-bottom: 1px solid #e2e3e7;
+  padding: 5px 0;
+}
+
+section.main-content .container .categories ul li:last-child {
+  border: none;
+}
+
+section.main-content .container .categories ul li a {
+  color: black;
+}
+
+section.main-content .container .categories ul li a:hover {
+  text-decoration: underline;
+}
+
+section.main-content .container .product .col-6 a {
+  color: black;
+}
+
+section.main-content .container .product .col-6 a img.w-100 {
+  border-radius: 10px;
+}
+
+section.main-content .container .product .col-6 a img.small {
+  width: 25%;
+  border-radius: 5px;
+}
+
+section.main-content .container .product .col-6 a .sale {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 45px;
+  height: 40px;
+  background-color: #FF4200;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8rem;
+}
+
+section.main-content .container .product .product-desc .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+section.main-content .container .product .product-desc a:hover {
+  text-decoration: underline;
+}
+
+section.main-content .container .product .product-desc p {
+  color: #666666;
+  font-weight: bold;
+  line-height: 2.1rem;
+}
+
+section.main-content .container .product form input {
+  width: 60px;
+}
+
+section.main-content .container .product form button {
+  height: 34px;
+}
+
+section.main-content .container .product .nav-tabs .nav-item .nav-link {
+  color: black;
+  background: white;
+}
+
+section.main-content .container .product .nav-tabs .nav-item .nav-link.active {
+  color: white;
+  background: black;
+}
+
+section.main-content .container .product .comments .comment img {
+  border: 5px solid #EBE9EB;
+}
+
+section.main-content .container .product .comments .comment .comment-block {
+  border: 1px solid #E4E1E3;
+  border-radius: 5px;
+  color: #767676;
+}
+
+section.main-content .container .product .comments .comment .comment-block h5, section.main-content .container .product .comments .comment .comment-block span {
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
